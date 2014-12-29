@@ -2,7 +2,7 @@
 
 This script provides a easy way to install LibShortText.
 
-# Importance
+# Notice
 > It only works on Unix-based System like Linux or Mac OS, while the Python version must be 2.6 or newer.
 
 # Install
