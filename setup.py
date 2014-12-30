@@ -33,7 +33,8 @@ class CleanCommand(Clean):
             shutil.rmtree('build')
         for dirpath, dirnames, filenames in os.walk('libshorttext'):
             for filename in filenames:
-                if (filename.endswith('.so') or filename.endswith('.pyd') or filename.endswith(
+                if (filename.endswith('.o') or filename.endswith('.a') or filename.endswith('.so') or filename.endswith(
+                        '.pyd') or filename.endswith(
                         '.dll') or filename.endswith('.pyc')):
                     os.unlink(os.path.join(dirpath, filename))
             for dirname in dirnames:
