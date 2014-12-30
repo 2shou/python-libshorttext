@@ -2,6 +2,7 @@ import os
 import shutil
 from distutils.command.clean import clean as Clean
 import sys
+from os.path import join
 
 from numpy.distutils.core import setup
 
@@ -76,7 +77,7 @@ def setup_configuration():
             'Operating System :: MacOS',
         ],
         cmdclass={'clean': CleanCommand},
-        package_data={'libshorttext': ['converter/stop-words/*']},
+        package_data={'libshorttext': [join('converter', 'stop-words', '*')]},
         **extra_setuptools_args
     )
     metadata['configuration'] = configuration
