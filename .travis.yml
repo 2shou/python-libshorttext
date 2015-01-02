@@ -6,4 +6,4 @@ python:
 install:
     - pip install -q -e . --use-mirrors
 script:
-    - python setup.py test
+    - python setup.py build
