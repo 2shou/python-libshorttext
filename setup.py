@@ -12,15 +12,15 @@ class MakeCommand(DistutilsInstall):
         common_dir = 'libshorttext/converter/stemmer'
         target_dir = '%s/%s' % (self.build_lib, common_dir)
         self.mkpath(target_dir)
-        os.system('mv %s/porter.so.1 %s' % (common_dir, target_dir))
+        os.system('cp %s/porter.so.1 %s' % (common_dir, target_dir))
         common_dir = 'libshorttext/classifier/learner'
         target_dir = '%s/%s' % (self.build_lib, common_dir)
         self.mkpath(target_dir)
-        os.system('mv %s/util.so.1 %s' % (common_dir, target_dir))
+        os.system('cp %s/util.so.1 %s' % (common_dir, target_dir))
         common_dir = 'libshorttext/classifier/learner/liblinear'
         target_dir = '%s/%s' % (self.build_lib, common_dir)
         self.mkpath(target_dir)
-        os.system('mv %s/liblinear.so.1 %s' % (common_dir, target_dir))
+        os.system('cp %s/liblinear.so.1 %s' % (common_dir, target_dir))
         DistutilsInstall.run(self)
 
 
