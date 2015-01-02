@@ -1,6 +1,8 @@
 python-libshorttext
 ===================
 
+[![Build Status](https://travis-ci.org/2shou/python-libshorttext.svg?branch=master)](https://travis-ci.org/2shou/python-libshorttext)
+
 A easy-install script for LibShortText
 
 [LibShortText](http://www.csie.ntu.edu.tw/~cjlin/libshorttext/) is a high-performance classifier for short-text such as titles, questions, sentences, and short messages.
